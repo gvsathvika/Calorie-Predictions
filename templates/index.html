@@ -1,0 +1,43 @@
+<html>
+   <head>
+    <title>ML PROJECT</title>
+    <meta name="veiwport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/static/stylee.css">
+
+   </head>
+   <body>
+      <img class="wave" src="/static/wave.png">
+      <div class="ava">
+            <img src="/static/avatar.svg">
+      </div>
+      <form action = "http://localhost:5000/result" method = "POST">
+         <h1 class="hd">CALORIES BURNT PREDICTION</h1>
+         
+         <div class="form__group" style="text-align: left; font-size: larger; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >
+            
+            <label for="Gender" class="form__label">Gender[Male/Female] : </label>
+            <input type="input" class="form__field" placeholder="Enter 0 or 1" name="Gender" id='Gender' required /><br>
+            
+            <label for="Age" class="form__label">Age of the Person : </label>
+            <input type="input" class="form__field" placeholder="Enter Age" name="Age" id='Age' required /><br>
+
+            <label for="Height" class="form__label">Height of the Person : </label>
+            <input type="input" class="form__field" placeholder="Enter Height (cm)" name="Height" id='Height' required /><br>
+
+            <label for="Weight" class="form__label">Weight of the Person : </label>
+            <input type="input" class="form__field" placeholder="Enter Weight (kg)" name="Weight" id='Weight' required /><br>
+
+            <label for="Duration" class="form__label">Duration of Exercise : </label>
+            <input type="input" class="form__field" placeholder="Enter Time (min)" name="Duration" id='Duration' required /><br>
+
+            <label for="Heart-Rate" class="form__label">Current Heart-Rate : </label>
+            <input type="input" class="form__field" placeholder="Enter Heart-rate (no.)" name="Heart-Rate" id='Heart-Rate' required /><br>
+
+            <label for="Body-Temperature" class="form__label">Current Body_Temperature : </label>
+            <input type="input" class="form__field" placeholder="Enter Body-Temperature (c)" name="Body-Temperature" id='Body-Temperature' required /><br>
+
+          </div>
+         <p style="text-align: right;"><input class="form-submit-button" type = "submit" value = "PREDICT" /></p>
+      </form>
+   </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+   <head>
+      <title>CALORIES</title>
+      <meta name="veiwport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="/static/result_style.css">
+   </head>
+   
+   <body>
+      <h1 class="head">NUMBER OF CALORIES BURNT....</h1>
+      <div>
+         <img align="right" src="/static/cal.svg">
+      </div>
+
+      <div class="ans"></div>
+      <div class="fb"><b>{{predict}}</b></div>
+      
+
+      <table border = 1 style="position: absolute; bottom: 60px; left: 80px; width: 300px;">
+         {% for key,value in result.items() %}
+            <tr>
+               <th> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+   </body>
+</html>
